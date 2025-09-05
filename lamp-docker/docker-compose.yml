@@ -5,8 +5,8 @@ services:
 		container_name: lamp-apache
 		ports:
 			- "80:80"
-		volumes:
-			- ./src:/var/www/html
+ 		volumes:
+ 			- ../wordpress:/var/www/html
 		depends_on:
 			- mysql
 	php:
